@@ -16,6 +16,7 @@
     --black: #111;
     --dark-grey: #555;
     --light-grey: #ddd;
+    --gradient: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 
     --text-color: var(--black);
     --line-color: var(--dark-grey);
@@ -282,7 +283,7 @@ header {
 
 .intro__image::after {
     background: var(--line-color);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: var(--gradient);
     transition: opacity 0.3s ease-in, scale 0.3s ease-in;
 }
 
@@ -372,6 +373,30 @@ header {
 
 .panel__title + .panel__brief {
     padding-block: 1rem;
+}
+
+.content-breaker {
+    text-align: center;
+    inline-size: max-content;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    font-size: 1.5rem;
+}
+
+.content-breaker span:nth-child(2) {
+    display: inline-block;
+    padding: 1rem 2rem;
+    flex: 1;
+}
+
+.content-breaker span:not(:nth-child(2)) {
+    font-size: 4rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 [data-card='feedback'] p:first-of-type::first-letter,
