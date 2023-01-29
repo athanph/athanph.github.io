@@ -16,18 +16,22 @@
     --black: #111;
     --dark-grey: #555;
     --light-grey: #ddd;
+    --grey: #666;
     --gradient: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 
     --text-color: var(--black);
+    --sub-text-color: var(--dark-grey);
     --line-color: var(--dark-grey);
     --line-secondary-color: var(--light-grey);
     --bg-color: var(--white);
+    --focus-color: #f0ace1;
+    --star-color: #ff8c00;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --white: #111;
-        --black: #f2f2f2;
+        --black: #fff;
         --dark-grey: #ddd;
         --light-grey: #555;
         --text-shadow: transparent;
@@ -38,12 +42,13 @@
         --black: #111;
         --dark-grey: #555;
         --light-grey: #ddd;
+        --grey: #666;
     }
 }
 
 .dark-mode {
     --white: #111;
-    --black: #f2f2f2;
+    --black: #fff;
     --dark-grey: #ddd;
     --light-grey: #555;
     --text-shadow: transparent;
@@ -54,6 +59,10 @@
 *::after {
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--focus-color);
 }
 
 html,
@@ -136,7 +145,6 @@ header {
     font-family: var(--font_serif);
     font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 0.125rem;
 }
 
 .quick-actions {
@@ -189,6 +197,10 @@ header {
 	background: var(--bg-color);
 	border-radius: 90px;
 	transition: 0.3s;
+}
+
+.mode-switch__input:focus-visible + label {
+    outline: 2px solid var(--focus-color);
 }
 
 .mode-switch__input:checked + label {
@@ -348,7 +360,7 @@ header {
 
 /* CONTENT */
 .content {
-    padding-block-start: 4rem;
+    padding-block-start: 10rem;
 }
 
 .content.grid {
@@ -363,7 +375,7 @@ header {
 .content__title,
 .panel__title {
     font-family: var(--font_serif);
-    padding-block-end: 0.5rem;
+    padding-block: 0.5rem;
     border-block-end: 2px solid var(--dark-grey);
     position: sticky;
     top: 0;
@@ -415,14 +427,6 @@ header {
     pointer-events: none
 }
 
-[data-list='tech']:hover [data-item] {
-    opacity: 0.3;
-}
-
-[data-list='tech'] [data-item]:hover {
-    opacity: 1;
-}
-
 [data-list='tech'] li {
     position: relative;
     padding: 5px;
@@ -450,17 +454,6 @@ header {
     z-index: -1;
 }
 
-[data-item]:hover::before{
-    opacity: 1;
-    translate: 10px 0;
-}
-
-[data-item]:hover img {
-    scale: 0.8;
-    border-radius: 0 100% 100%;
-    box-shadow: 1px 1px 2px 0 var(--line-color);
-}
-
 [data-list='tech'] img {
     display: inline-block;
     aspect-ratio: 1 / 1;
@@ -478,53 +471,49 @@ header {
     transition: all 0.2s ease-out;
 }
 
-[data-list='tech'] span:hover {
-    color: var(--line-secondary-color);
-    background-color: var(--line-color);
-}
-
+[data-list='work'] li,
 [data-list='sample'] li {
-    padding-block-end: 2rem;
+    padding-block-end: 3rem;
 }
 
 .keyword {
     display: inline-block;
     padding: 0 4px;
     font-size: 0.8em;
-    background-color: var(--line-secondary-color);
+    background-color: var(--line-color);
+    color: var(--bg-color);
     border-radius: 5px;
 }
 
 .project-image {
     display: inline-block;
     margin-block-end: 1rem;
+    filter: brightness(0.9);
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .project-image img {
-    width: 7rem;
+    width: 100%;
     aspect-ratio: 16 / 9;
     scale: 1;
     transition: scale 0.3s ease-in-out;
     pointer-events: none;
 }
 
-.card + .card {
-    margin-block-start: 1rem;
+.card p {
+    color: var(--sub-text-color);
 }
 
-[data-list='work'],
+.card + .card {
+    margin-block-start: 2rem;
+}
+
 [data-list='feedback'] {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
-}
-
-[data-card='sample']:hover img {
-    scale: 0.8;
-}
-
-[data-card='feedback'] {
     font-size: 1rem;
 }
 
@@ -532,10 +521,48 @@ header {
     margin-inline: auto;
 }
 
+.star {
+    color: var(--star-color);
+}
+
 /* FOOTER */
 footer {
     padding-block: 8rem 2rem;
     text-align: center;
+}
+
+@media (any-hover: hover) {
+    [data-list='tech']:hover [data-item] {
+        opacity: 0.3;
+    }
+
+    [data-list='tech'] [data-item]:hover {
+        opacity: 1;
+    }
+
+    [data-item]:hover::before{
+        opacity: 1;
+        translate: 10px 0;
+    }
+
+    [data-item]:hover img {
+        scale: 0.8;
+        border-radius: 0 100% 100%;
+        box-shadow: 1px 1px 2px 0 var(--line-color);
+    }
+
+    .project-image {
+        filter: grayscale(1);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    [data-card='sample']:hover .project-image  {
+        filter: grayscale(0);
+    }
+
+    [data-card='sample']:hover img  {
+        scale: 1.1;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -558,19 +585,6 @@ footer {
 @media screen and (max-width: 1023px) {
     .content.grid > * {
         grid-column: 1 / -1;
-    }
-
-    [data-card='sample'] {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .project-image img {
-        border: 1px solid var(--line-secondary-color);
-    }
-
-    .project-details {
-        flex: 1;
     }
 }
 
@@ -614,17 +628,16 @@ footer {
         font-size: 1.125rem;
     }
 
-    [data-list='work'] li {
-        flex-basis: calc(50% - 1rem);
+    [data-list='work'],
+    [data-list='sample'] {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 2rem;
     }
 
     [data-list='feedback'] li {
         flex: 1;
     }
-
-    .project-image img {
-        width: 14rem;
-   }
 }
 
 @media screen and (min-width: 1024px) {
@@ -716,29 +729,10 @@ footer {
         flex-basis: calc(33.333% - 1rem);
     }
 
-    [data-list='sample'] {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    [data-list='sample'] li {
-        flex: 1;
-    }
-
     [data-card='feedback'] {
         font-size: large;
         padding-inline: 1rem;
     }
-
-    .project-image {
-        background-color: #fff;
-    }
-
-    .project-image img {
-        width: 100%;
-   }
 }
 
 @media screen and (min-width: 1366px) {
