@@ -1,443 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Manas</title>
-    <meta name="description" content="A professional personal website.">
-    <link rel="stylesheet" href="./assets/styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="A professional personal website." />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script async src="./assets/scripts/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
-        <header>
-            <span class="site-title">jonathan manas</span>
-            <div class="quick-actions">
-                <a href="./JonathanManas-Resume2023.pdf" class="download-link" target="_blank">Download Resume</a>
-                <div class="mode-switch">
-                    <input type="checkbox" id="mode-switch__input" class="mode-switch__input" />
-                    <label for="mode-switch__input" aria-label="Toggle theme">
-                        <img src="./assets/images/sun.svg" alt="" width="24">
-                        <img src="./assets/images/moon.svg" alt="" width="24">
-                    </label>
-                </div>
+      <header>
+        <span class="site-title">jonathan manas</span>
+        <div class="quick-actions">
+          <a
+            href="./JonathanManas-Resume2024.pdf"
+            class="download-link"
+            target="_blank"
+            >Download Resume</a
+          >
+          <div class="mode-switch">
+            <input
+              type="checkbox"
+              id="mode-switch__input"
+              class="mode-switch__input" />
+            <label for="mode-switch__input" aria-label="Toggle theme">
+              <img src="./assets/images/sun.svg" alt="" width="24" />
+              <img src="./assets/images/moon.svg" alt="" width="24" />
+            </label>
+          </div>
+        </div>
+      </header>
+      <main class="container">
+        <div class="intro grid">
+          <div class="intro__profile">
+            <div class="intro__image">
+              <img
+                src="./assets/images/profile.webp"
+                alt="Jonathan Manas profile"
+                fetchpriority="high" />
             </div>
-        </header>
-        <main class="container">
-            <div class="intro grid">
-                <div class="intro__profile">
-                    <div class="intro__image">
-                        <img src="./assets/images/profile.webp" alt="Jonathan Manas profile" fetchpriority="high" />
-                    </div>
-                </div>
-                <h1 class="intro__lead" aria-label="experienced front-end developer">
-                    <span class="intro__highlight" aria-hidden="true">experienced</span><br/>
-                    <span aria-hidden="true">front-end developer.</span>
-                </h1>
-                <div class="intro__description">
-                    <p>Hi! I'm <strong>Jonathan Manas</strong> <em>aka.</em> Athan, a passionate Front-end Developer based in the Philippines.</p>
-                </div>
-            </div>
+          </div>
+          <h1 class="intro__lead" aria-label="experienced front-end developer">
+            <span class="intro__highlight" aria-hidden="true">experienced</span
+            ><br />
+            <span aria-hidden="true">front-end</span>
+            <span aria-hidden="true">developer.</span>
+          </h1>
+          <div class="intro__description">
+            <p>
+              Hi! I'm <strong>Jonathan Manas</strong> <em>aka.</em> Athan, a
+              passionate <span class="nowrap">Front-end Developer</span> based
+              in the Philippines.
+            </p>
+          </div>
+        </div>
 
-            <div class="content grid" data-columns="2">
-                <div class="content__col">
-                    <div class="panel" data-panel="about">
-                        <div class="panel__brief">
-                            <p>Coming from a Psychology background, I taught myself how to code websites. I created my first website in 2000 and have pursued professional web design and development since 2005.</p>
-                            <p>I attributed Psychology, cognitive creativity, and my interest in logic and human behavior to my success and standout advantage as a Front-end Developer.</p>
-                            <p>Understanding the range of the Front-end spectrum, I tend to focus on <span class="keyword">CSS</span>, <span class="keyword">UX</span>, <span class="keyword">web performance</span>, and <span class="keyword">Accessibility</span>.</p>
-                            <p>Being an advocate of clean, maintainable code, my go-to CSS methodologies are <span class="keyword">BEM</span>, <span class="keyword">OOCSS</span>, <span class="keyword">SMACSS</span>, and <span class="keyword">Atomic Design</span>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__col">
-                    <div class="panel" data-panel="tech">
-                        <h2 class="panel__title">Tech I frequently use and am familiar with...</h2>
-                            <ul role="list" data-list="tech">
-                                <li data-item="HTML"><img src="assets/images/logos/html.svg" alt="HTML logo" role="presentation"></li>
-                                <li data-item="CSS"><img src="./assets/images/logos/css.svg" alt="CSS logo" role="presentation"></li>
-                                <li data-item="Sass"><img src="./assets/images/logos/sass.svg" alt="Sass logo" role="presentation"></li>
-                                <li data-item="Javascript"><img src="./assets/images/logos/js.svg" alt="Javascript logo" role="presentation"></li>
-                                <li data-item="Typescript"><img src="./assets/images/logos/ts.svg" alt="Typescript logo" role="presentation"></li>
-                                <li data-item="ReactJS"><img src="./assets/images/logos/react.svg" alt="ReactJS logo" role="presentation"></li>
-                                <li data-item="NextJS"><img src="./assets/images/logos/next.svg" alt="NextJS logo" role="presentation"></li>
-                                <li data-item="Wordpress"><img src="./assets/images/logos/wp.svg" alt="Wordpress logo" role="presentation"></li>
-                                <li data-item="Drupal"><img src="./assets/images/logos/drupal.svg" alt="Drupal logo" role="presentation"></li>
-                                <li data-item="Storybook"><img src="./assets/images/logos/storybook.svg" alt="Storybook logo" role="presentation"></li>
-                                <li data-item="NodeJS"><img src="./assets/images/logos/node.svg" alt="NodeJS logo" role="presentation"></li>
-                                <li data-item="Git"><img src="./assets/images/logos/git.svg" alt="Git logo" role="presentation"></li>
-                                <li data-item="Webpack"><img src="./assets/images/logos/webpack.svg" alt="Webpack logo" role="presentation"></li>
-                            </ul>
-                            <ul role="list" data-list="tech">
-                                <li><span>Handlebars</span></li>
-                                <li><span>Jest</span></li>
-                                <li><span>Salesforce</span></li>
-                                <li><span>Electron</span></li>
-                                <li><span>Figma</span></li>
-                                <li><span>Docker</span></li>
-                            </ul>
-                    </div>
-                </div>
+        <div class="content grid" data-columns="2">
+          <h2 class="content__title">featured works</h2>
+          <div class="content__col">
+            <div class="panel">
+              <div class="panel__brief">
+                <p>
+                  Being part of different teams enabled me to contribute to the
+                  development of projects that leverage cutting-edge
+                  technologies, ensuring optimal experiences for end-users.
+                </p>
+              </div>
             </div>
-
-            <div class="content grid" data-columns="1">
-                <h2 class="content__title">Appreciations</h2>
-                <div class="content__col">
-                    <div class="panel" data-panel="feedback">
-                        <ul role="list" data-list="feedback">
-                            <li>
-                                <div class="card" data-card="feedback">
-                                    <p>“Having worked with Athan on two projects, I could say, in my opinion, that he is one of the top developers in the company. He was highlighted as an effective team leader, supportive of everyone, and always offering advice that he believes will improve the team's efficiency - all while continuing to demonstrate competence in completing tasks as accurately and promptly as he can."
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="feedback">
-                                    <p>"Jonathan takes the time to really understand what's being asked. Whether working with designers, UX, client, or backend teams, he doesn't just take the easy road out of a discussion."
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="feedback">
-                                    <p>“Athan has shown the leadership we expect him to be. He took on the most complicated tasks and turned them into exceptional features of the project. His meticulousness was vital in developing with little to no UI issues. He was vocal on bringing up issues, and expressing possible solutions to the team's problems."
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+          </div>
+          <div class="content__col">
+            <div class="panel" data-panel="sample">
+              <ul role="list" data-list="sample">
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-myosh.jpg"
+                        alt="myosh"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-myosh-2.jpg"
+                        alt="myosh"
+                        loading="lazy"
+                        class="sample-image-front" />
                     </div>
-                </div>
+
+                    <div class="project-details">
+                      <h3>myosh</h3>
+                      <div>
+                        <small
+                          >Environmental, Halth and Safety Management (EHS)
+                          Cloud-based Software</small
+                        >
+                      </div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Lead Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://myosh.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >myosh.com</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">React</span>
+                        <span class="keyword">Redux</span>
+                        <span class="keyword">Zustand</span>
+                        <span class="keyword">SWR</span>
+                        <span class="keyword">React Hook Form</span>
+                        <span class="keyword">Recharts</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-foxadsolutions.jpg"
+                        alt="Fox Ad Solutions"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-foxadsolutions-2.jpg"
+                        alt="Fox Ad Solutions"
+                        loading="lazy"
+                        class="sample-image-front" />
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Fox Ad Solutions</h3>
+                      <div><small>Sales and Marketing</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Lead Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://foxadsolutions.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >foxadsolutions.com</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">Wordpress</span>
+                        <span class="keyword">React</span>
+                        <span class="keyword">Zustand</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-partycity.jpg"
+                        alt="Party City"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-partycity-2.jpg"
+                        alt="Party City"
+                        loading="lazy"
+                        class="sample-image-front" />
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Party City</h3>
+                      <div><small>Retail chain corporation</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Lead Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://partycity.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >partycity.com</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">Salesforce</span>
+                        <span class="keyword">Demandware</span>
+                        <span class="keyword">Amplience</span>
+                        <span class="keyword">Storybook</span>
+                        <span class="keyword">Handlebars</span>
+                        <span class="keyword">Web Components</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-nycedc.jpg"
+                        alt="NYCEDC"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-nycedc-2.jpg"
+                        alt="NYCEDC"
+                        loading="lazy"
+                        class="sample-image-front" />
+                    </div>
+
+                    <div class="project-details">
+                      <h3>New York City EDC</h3>
+                      <div><small>Non-profit organization</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://edc.nyc"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >edc.nyc</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">Drupal</span>
+                        <span class="keyword">Twig</span>
+                        <span class="keyword">Pattern Lab</span>
+                      </p>
+                      <p class="award">
+                        <span class="star" aria-hidden="true">&#9733;</span>
+                        <a
+                          href="https://winners.webbyawards.com/2020/websites/general-websites/government-civil-innovation/122713/nycedc#:~:text=Code%20and%20Theory-,Jonathan%20Manas,-Code%20and%20Theory"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >The Webby Awards (2020) - Honoree - Websites and
+                          Mobile Sites Government & Civil Innovation</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-giffords.jpg"
+                        alt="Giffords"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-giffords-2.jpg"
+                        alt="Giffords"
+                        loading="lazy"
+                        class="sample-image-front" />
+                    </div>
+
+                    <div class="project-details">
+                      <h3>Giffords</h3>
+                      <div><small>Social activism organization</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Senior Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://giffords.org/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >giffords.org</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">Wordpress</span>
+                        <span class="keyword">Contentful</span>
+                      </p>
+                      <p class="award">
+                        <span class="star" aria-hidden="true">&#9733;</span>
+                        <a
+                          href="https://winners.webbyawards.com/2022/websites-and-mobile-sites/general-websites-and-mobile-sites/activism/222562/giffords--launching-a-powerful-resource-to-spark-action-on-gun-violence#:~:text=Code%20and%20Theory-,Jonathan%20Manas,-Senior%20Developer%2C%20Front"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >The Webby Awards (2022) - Honoree - Websites and
+                          Mobile Sites Activism</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-image">
+                      <img
+                        src="assets/images/projects/project-ncoa.jpg"
+                        alt="NCOA"
+                        loading="lazy"
+                        class="sample-image-back" />
+                      <img
+                        src="assets/images/projects/project-ncoa-2.jpg"
+                        alt="NCOA"
+                        loading="lazy"
+                        class="sample-image-front" />
+                    </div>
+
+                    <div class="project-details">
+                      <h3>National Council on Aging</h3>
+                      <div><small>Charitable organization</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://ncoa.org"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >ncoa.org</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">Kentico CMS</span>
+                      </p>
+                      <p class="award">
+                        <span class="star" aria-hidden="true">&#9733;</span>
+                        <a
+                          href="https://www.w3award.com/winners/gallery/?ce_b4=bmljb2xlLnNhbnRvc0Bjb2RlYW5kdGhlb3J5LmNvbQ&cas_b4=YnJlbnQuYnVudGluQGNvZGVhbmR0aGVvcnkuY29t&coid=Y29kZS1hbmQtdGhlb3J5fDE2MzM0NDkxNjh8MzE0OTc"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >W3 Awards (2021) - Best in Show - General
+                          Websites-Associations</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-details other">
+                      <small><strong>Others:</strong></small>
+                      <h3>Remi by Allspring Global Investments</h3>
+                      <div>
+                        <small>Asset Management Portfolio Portal</small>
+                      </div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Senior Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="hhttps://www.allspringglobal.com/investments/capabilities/remi"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >allspringglobal.com</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">React</span>
+                        <span class="keyword">Zustand</span>
+                        <span class="keyword">React Hook Form</span>
+                        <span class="keyword">SWR</span>
+                        <span class="keyword">Storybook</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-details other">
+                      <h3>Scout Health</h3>
+                      <div><small>Healthcare marketing firm</small></div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Lead Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>URL:</strong></small>
+                        <a
+                          href="https://scouthc.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >scouthc.com</a
+                        >
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">HTML</span>
+                        <span class="keyword">SASS</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="sample">
+                    <div class="project-details other">
+                      <h3>Responsible Time-Off (RTO)</h3>
+                      <div>
+                        <small
+                          >Code & Theory Internal PTO Management Portal</small
+                        >
+                      </div>
+                      <p>
+                        <small><strong>Role:</strong></small>
+                        Front-end Developer
+                      </p>
+                      <p>
+                        <small><strong>Tech:</strong></small>
+                        <span class="keyword">React</span>
+                        <span class="keyword">Styled Components</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-            <div class="content grid" data-columns="1">
-                <div class="content__col">
-                    <div class="content-breaker">
-                        <span aria-hidden="true">&lbrace;</span>
-                        <span>I maintain a Facebook page - <small><a href="https://www.facebook.com/frontendnotes" target="_blank" rel="noreferrer noopener">Front-end Notes</a></small> - where I share Front-end tips and personal learnings.</span>
-                        <span aria-hidden="true">&rbrace;</span>
-                    </div>
-                 </div>
+        <div class="content grid content--break" data-columns="1">
+          <h2 class="content__title">Appreciations</h2>
+          <div class="content__col">
+            <div class="panel" data-panel="feedback">
+              <ul role="list" data-list="feedback">
+                <li>
+                  <div class="card" data-card="feedback">
+                    <p>
+                      “Athan has shown the leadership we expect him to be. He
+                      took on the most complicated tasks and turned them into
+                      exceptional features of the project. His meticulousness
+                      was vital in developing with little to no UI issues. He
+                      was vocal on bringing up issues, and expressing possible
+                      solutions to the team's problems."
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="feedback">
+                    <p>
+                      "Jonathan takes the time to really understand what's being
+                      asked. Whether working with designers, UX, client, or
+                      backend teams, he doesn't just take the easy road out of a
+                      discussion."
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="feedback">
+                    <p>
+                      “Having worked with Athan on two projects, I could say, in
+                      my opinion, that he is one of the top developers in the
+                      company. He was highlighted as an effective team leader,
+                      supportive of everyone, and always offering advice that he
+                      believes will improve the team's efficiency - all while
+                      continuing to demonstrate competence in completing tasks
+                      as accurately and promptly as he can."
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-            <div class="content grid" data-columns="2">
-                <h2 class="content__title">Career Journey</h2>
-                <div class="content__col">
-                    <div class="panel">
-                        <div class="panel__brief">
-                            <p>I started with the role of Web Designer at a time when Front-end still isn't a thing.</p>
-                            <p>Along the way, I've been part of various teams assuming roles both as a <span class="keyword">Senior Developer</span> and <span class="keyword">Team Lead</span> providing sustainable solutions to front-end performance issues.</p>
-                            <p>For detailed work information, <a href="./JonathanManas-Resume2023.pdf" target="_blank">download my resume</a>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__col">
-                    <div class="panel" data-panel="work">
-                        <ul role="list" data-list="work">
-                            <li>
-                                <div class="card" data-card="work">
-                                    <h3>Senior Front-end Developer / Unit Team Lead</h3>
-                                    <small>2018 - present</small>
-                                    <p>Transforms designs into highly usable, responsive web applications. Leads team with front-end system guidance to ensure code standards and that each project is maintainable and scalable. Handles and leads lower-tier developers with technical and practical career support.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="work">
-                                    <h3>Front-end Developer (Software Engineer II)</h3>
-                                    <small>2016 - 2018</small>
-                                    <p>Handled front-end requirements ensuring that both public and private company web apps are accessible and functional on most existing browsers.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="work">
-                                    <h3>Senior Front-end Developer / Digital Production Manager</h3>
-                                    <small>2011 - 2015</small>
-                                    <p>Produced scalable and responsive websites using effective front-end tools and standards. Participated in technical planning, task scheduling, and reporting, up to project delivery. Initiated development guidelines and improved production workflow to ensure the highest client satisfaction. Conducted hiring of new team members.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="work">
-                                    <h3>
-                                        <span>Web Designer / Front-end Developer</span>
-                                    </h3>
-                                    <small>2011</small>
-                                    <p>Created user interface designs, brand logos and front-end development.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="work">
-                                    <h3>
-                                        <span>Web Master / Graphic Artist / Marketing Manager</span>
-                                    </h3>
-                                    <small>2007 - 2010</small>
-                                    <p>Maintained company website, plus content writing. Headed Marketing and Advertising Department to conceptualize and implement the company's marketing and advertising campaign and strategies. Handled trade exhibitions and events. Produced emailers, online newsletters, and print collaterals.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="work">
-                                    <small><strong>Other Titles:</strong></small>
-                                    <h3>Web Designer, Graphic Artist, HTML+CSS Coder</h3>
-                                    <small>2005 - 2007</small>
-                                </div>
-
-                                <div class="card" data-card="work">
-                                    <h3>Resource Speaker / Trainor</h3>
-                                    <small>ReactJS Training (May 30 - June 01, 2018)</small>
-                                    <small>Phoenix One Knowledge Solutions</small>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="content grid" data-columns="2">
+          <h2 class="content__title">Career Journey</h2>
+          <div class="content__col">
+            <div class="panel">
+              <div class="panel__brief">
+                <p>
+                  I began as a Web Designer in an era when Front-end wasn't a
+                  prominent focus.
+                </p>
+                <p>
+                  Over time, I've contributed to different teams, taking on
+                  positions as both a
+                  <span class="keyword">Senior Developer</span> and
+                  <span class="keyword">Team Lead</span>, offering lasting
+                  solutions to front-end performance challenges.
+                </p>
+                <p>
+                  <small
+                    ><a href="./JonathanManas-Resume2024.pdf" target="_blank"
+                      >download my resume</a
+                    ></small
+                  ><br />
+                  for detailed work information.
+                </p>
+              </div>
             </div>
-
-            <div class="content grid" data-columns="2">
-                <h2 class="content__title">featured works</h2>
-                <div class="content__col">
-                    <div class="panel">
-                        <div class="panel__brief">
-                            <p>Joining various teams allowed me to take part in building select projects employing the latest technologies to provide optimal end-user experiences.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__col">
-                    <div class="panel" data-panel="sample">
-                        <ul role="list" data-list="sample">
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-foxadsolutions.jpg" alt="Fox Ad Solutions" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>Fox Ad Solutions</h3>
-                                        <div><small>Sales and Marketing</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Lead Front-end Developer
-                                        </p>
-                                        <p><small><strong>URL:</strong></small>
-                                            <a href="https://foxadsolution.com" target="_blank" rel="noreferrer noopener">foxadsolutions.com</a>
-                                        </p>
-                                        <p><small><strong>Tech:</strong></small>
-                                            <span class="keyword">Wordpress</span>
-                                            <span class="keyword">React</span>
-                                            <span class="keyword">Zustand</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-partycity.jpg" alt="Party City" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>Party City</h3>
-                                        <div><small>Retail chain corporation</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Lead Front-end Developer
-                                        </p>
-                                        <p><small><strong>URL:</strong></small>
-                                            <a href="https://partycity.com" target="_blank" rel="noreferrer noopener">partycity.com</a>
-                                        </p>
-                                        <p><small><strong>Tech:</strong></small>
-                                            <span class="keyword">Salesforce</span>
-                                            <span class="keyword">Demandware</span>
-                                            <span class="keyword">Amplience</span>
-                                            <span class="keyword">Storybook</span>
-                                            <span class="keyword">Handlebars</span>
-                                            <span class="keyword">Web Components</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-nycedc.jpg" alt="NYCEDC" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>New York City EDC</h3>
-                                        <div><small>Non-profit organization</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Front-end Developer
-                                        </p>
-                                        <p>
-                                            <small><strong>URL:</strong></small>
-                                            <a href="https://edc.nyc" target="_blank" rel="noreferrer noopener">edc.nyc</a>
-                                        </p>
-                                        <p>
-                                            <small><strong>Tech:</strong></small>
-                                            <span class="keyword">Drupal</span>
-                                            <span class="keyword">Twig</span>
-                                            <span class="keyword">Pattern Lab</span>
-                                        </p>
-                                        <p>
-                                            <span class="star" aria-hidden="true">&#9733;</span>
-                                            <a href="https://winners.webbyawards.com/2020/websites/general-websites/government-civil-innovation/122713/nycedc" target="_blank" rel="noreferrer noopener">The Webby Awards (2020) - Honoree</a></p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-ncoa.jpg" alt="NCOA" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>National Council on Aging</h3>
-                                        <div><small>Charitable organization</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Front-end Developer
-                                        </p>
-                                        <p>
-                                            <small><strong>URL:</strong></small>
-                                            <a href="https://ncoa.org" target="_blank" rel="noreferrer noopener">ncoa.org</a>
-                                        </p>
-                                        <p>
-                                            <small><strong>Tech:</strong></small>
-                                            <span class="keyword">Kentico CMS</span>
-                                        </p>
-                                        <p>
-                                            <span class="star" aria-hidden="true">&#9733;</span>
-                                            <a href="https://www.w3award.com/winners/gallery/?ce_b4=bmljb2xlLnNhbnRvc0Bjb2RlYW5kdGhlb3J5LmNvbQ&cas_b4=YnJlbnQuYnVudGluQGNvZGVhbmR0aGVvcnkuY29t&coid=Y29kZS1hbmQtdGhlb3J5fDE2MzM0NDkxNjh8MzE0OTc" target="_blank" rel="noreferrer noopener">W3 Awards (2021) - Best in Show - General Websites-Associations</a></p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-remi.jpg" alt="Remi" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>Remi by Allspring Global Investments</h3>
-                                        <div><small>Asset Management Portfolio Portal</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Front-end Developer
-                                        </p>
-                                        <p>
-                                            <small><strong>URL:</strong></small>
-                                            <a href="hhttps://www.allspringglobal.com/investments/capabilities/remi" target="_blank" rel="noreferrer noopener">allspringglobal.com</a>
-                                        </p>
-                                        <p>
-                                            <small><strong>Tech:</strong></small>
-                                            <span class="keyword">React</span>
-                                            <span class="keyword">Zustand</span>
-                                            <span class="keyword">React Hook Form</span>
-                                            <span class="keyword">SWR</span>
-                                            <span class="keyword">Storybook</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-image">
-                                        <img src="assets/images/projects/project-scouthealth.jpg" alt="Scout Health" loading="lazy" />
-                                    </div>
-                                    
-                                    <div class="project-details">
-                                        <h3>Scout Health</h3>
-                                        <div><small>Healthcare marketing firm</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Lead Front-end Developer
-                                        </p>
-                                        <p>
-                                            <small><strong>URL:</strong></small>
-                                            <a href="https://scouthc.com" target="_blank" rel="noreferrer noopener">scouthc.com</a>
-                                        </p>
-                                        <p>
-                                            <small><strong>Tech:</strong></small>
-                                            <span class="keyword">HTML</span>
-                                            <span class="keyword">SASS</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card" data-card="sample">
-                                    <div class="project-details">
-                                        <small><strong>Others:</strong></small>
-                                        <h3>Responsible Time-Off (RTO)</h3>
-                                        <div><small>Code & Theory Internal PTO Management Portal</small></div>
-                                        <p><small><strong>Role:</strong></small>
-                                            Front-end Developer
-                                        </p>
-                                        <p>
-                                            <small><strong>Tech:</strong></small>
-                                            <span class="keyword">React</span>
-                                            <span class="keyword">Styled Components</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <div class="content__col">
+            <div class="panel" data-panel="work">
+              <ul role="list" data-list="work">
+                <li>
+                  <div class="card" data-card="work">
+                    <h3>Lead / Senior Front-end Developer</h3>
+                    <small>2023 - 2024</small>
+                    <p>
+                      Worked with a global vendor of cloud-based HSEQ Management
+                      Software, to transform and elevate software functionality
+                      across multiple enterprise modules while also overseeing
+                      maintenance tasks. Offered technical advice to enhance old
+                      applications, ensuring optimal performance and meeting
+                      client needs.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="work">
+                    <h3>Senior Front-end Developer / Unit Team Lead</h3>
+                    <small>2018 - 2023</small>
+                    <p>
+                      Turned designs into user-friendly, responsive web
+                      applications. Guided the front-end team to uphold code
+                      standards and ensure the maintainability and scalability
+                      of each project. Provided technical and practical career
+                      support to junior developers while taking a leadership
+                      role in overseeing their work.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="work">
+                    <h3>Front-end Developer (Software Engineer II)</h3>
+                    <small>2016 - 2018</small>
+                    <p>
+                      Managed the front-end specifications to guarantee
+                      accessibility and functionality of web applications for
+                      both public and private enterprises. Ensured compatibility
+                      across various browsers, addressing the diverse user base
+                      and enhancing the user experience on multiple platforms.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="work">
+                    <h3>
+                      Senior Front-end Developer / Digital Production Manager
+                    </h3>
+                    <small>2011 - 2015</small>
+                    <p>
+                      Developed scalable, responsive websites using proficient
+                      front-end tools and industry standards. Contributed to
+                      technical planning, task scheduling, and reporting
+                      throughout the project lifecycle. Established development
+                      guidelines to improve production workflow and ensure
+                      client satisfaction. Actively participated in the
+                      recruitment process, contributing to hiring new team
+                      members to strengthen and expand the project team.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="card" data-card="work">
+                    <h3>
+                      <span>Web Designer / Developer</span>
+                    </h3>
+                    <small>2011</small>
+                    <p>
+                      Created user interface designs, brand logos and front-end
+                      development.
+                    </p>
+                  </div>
+                  <div class="card" data-card="work">
+                    <h3>
+                      <span
+                        >Web Master / Graphic Artist / Marketing Manager</span
+                      >
+                    </h3>
+                    <small>2007 - 2010</small>
+                    <p>
+                      Oversaw the upkeep of the company website, including
+                      content creation. Led the Marketing and Advertising
+                      Department in the development and execution of
+                      comprehensive marketing and advertising campaigns and
+                      strategies. Managed trade exhibitions and events, ensuring
+                      successful execution. Generated emailers, online
+                      newsletters, and print collaterals to support the
+                      company's promotional efforts.
+                    </p>
+                  </div>
+                </li>
+                <!-- <li>
+                  <div class="card" data-card="work">
+                    <h3>Web Designer, Graphic Artist, HTML+CSS Coder</h3>
+                    <small>2005 - 2007</small>
+                  </div>
+                </li> -->
+                <li>
+                  <div class="card" data-card="work">
+                    <small><strong>Others:</strong></small>
+                    <h3>Resource Speaker / Trainer</h3>
+                    <small>ReactJS Training (May 30 - June 01, 2018)</small>
+                    <small>Phoenix One Knowledge Solutions</small>
+                    <p>
+                      Acted as a temporary instructor to a group of developers
+                      venturing into React for the first time. Provided training
+                      to facilitate introduction and understanding of React
+                      development principles.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-            <div class="content grid" data-columns="3">
-                <div class="content__col">
-                    <div class="panel">
-                        <h3 class="panel__title">Education</h3>
-                        <div class="panel__content">
-                            <p>
-                                Bachelor of Science in Psychology<br/>
-                                <small>Far Eastern University, Manila</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__col">
-                    <div class="panel">
-                        <h3 class="panel__title">Personal Milestones</h3>
-                        <div class="panel__content">
-                            <p>Run 102KM Bataan Death March (BDM) Ultramarathon <small>- Philippines (2012)</small></p>
-                            <p>Climbed Mt. Kinabalu <small>- Kota Kinabalu, Sabah, Malaysia (2013)</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__col">
-                    <div class="panel">
-                        <h3 class="panel__title">Get in touch</h3>
-                        <div class="panel__content">
-                            <p>LinkedIn: <a href="https://inkedin.com/in/athanph" target="_blank" rel="noreferrer noopener">linkedin.com/in/athanph</a></p>
-                            <p>Github: <a href="https://github.com/athanph" target="_blank" rel="noreferrer noopener">github.com/athanph</a></p>
-                            <p>Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#97;&#116;&#104;&#97;&#110;&#109;&#97;&#110;&#97;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#106;&#111;&#110;&#97;&#116;&#104;&#97;&#110;&#109;&#97;&#110;&#97;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
-                            <p>Facebook: <small><a href="https://www.facebook.com/frontendnotes" target="_blank" rel="noreferrer noopener">Front-end Notes</a></small></p>                            
-                        </div>
-                    </div>
-                </div>
+        <div class="content grid" data-columns="1">
+          <h2 class="content__title">workable tech</h2>
+          <div class="content__col">
+            <div class="panel" data-panel="tech">
+              <div>
+                <p>
+                  I studied Psychology and taught myself to code. Since 2005, my
+                  journey has been all about professional web design and
+                  development. My success as a Front-end Developer comes from
+                  combining insights from Psychology, creative thinking, and a
+                  strong interest in logic and human behavior. This unique
+                  combination gives me a distinctive edge in my approach to
+                  development.
+                </p>
+                <p>
+                  Understanding the breadth of the Front-end spectrum, my usual
+                  emphasis lies in <span class="keyword">CSS</span>,
+                  <span class="keyword">UX</span>,
+                  <span class="keyword">web performance</span>, and
+                  <span class="keyword">Accessibility</span>. And as a proponent
+                  of clear and sustainable code, I lean towards CSS
+                  methodologies such as <span class="keyword">BEM</span>,
+                  <span class="keyword">OOCSS</span>,
+                  <span class="keyword">SMACSS</span>, and
+                  <span class="keyword">Atomic Design</span> as my preferred
+                  approaches.
+                </p>
+              </div>
+              <ul role="list" data-list="tech">
+                <li data-item="HTML">
+                  <img
+                    src="assets/images/logos/html.svg"
+                    alt="HTML logo"
+                    role="presentation" />
+                </li>
+                <li data-item="CSS">
+                  <img
+                    src="./assets/images/logos/css.svg"
+                    alt="CSS logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Sass">
+                  <img
+                    src="./assets/images/logos/sass.svg"
+                    alt="Sass logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Javascript">
+                  <img
+                    src="./assets/images/logos/js.svg"
+                    alt="Javascript logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Typescript">
+                  <img
+                    src="./assets/images/logos/ts.svg"
+                    alt="Typescript logo"
+                    role="presentation" />
+                </li>
+                <li data-item="React">
+                  <img
+                    src="./assets/images/logos/react.svg"
+                    alt="ReactJS logo"
+                    role="presentation" />
+                </li>
+                <li data-item="NextJS">
+                  <img
+                    src="./assets/images/logos/next.svg"
+                    alt="NextJS logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Wordpress">
+                  <img
+                    src="./assets/images/logos/wp.svg"
+                    alt="Wordpress logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Drupal">
+                  <img
+                    src="./assets/images/logos/drupal.svg"
+                    alt="Drupal logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Storybook">
+                  <img
+                    src="./assets/images/logos/storybook.svg"
+                    alt="Storybook logo"
+                    role="presentation" />
+                </li>
+                <li data-item="NodeJS">
+                  <img
+                    src="./assets/images/logos/node.svg"
+                    alt="NodeJS logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Git">
+                  <img
+                    src="./assets/images/logos/git.svg"
+                    alt="Git logo"
+                    role="presentation" />
+                </li>
+                <li data-item="Webpack">
+                  <img
+                    src="./assets/images/logos/webpack.svg"
+                    alt="Webpack logo"
+                    role="presentation" />
+                </li>
+              </ul>
+              <ul role="list" data-list="tech">
+                <li><span>Redux</span></li>
+                <li><span>Handlebars</span></li>
+                <li><span>Jest</span></li>
+                <li><span>Salesforce</span></li>
+                <li><span>Electron</span></li>
+                <li><span>Figma</span></li>
+                <li><span>Docker</span></li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-            <div class="content grid" data-columns="1">
-                <div class="content__col">
-                    <div class="card" data-card="extra">
-                        <blockquote class="twitter-tweet">
-                            <p lang="en" dir="ltr">First memories of the web: 1999, my very first Yahoo email; GeoCities, Netscape, webpage using MS FrontPage. Happy 25th Birthday Web! <a href="https://twitter.com/hashtag/web25?src=hash&amp;ref_src=twsrc%5Etfw">#web25</a></p>&mdash; Jonathan Manas (@athanph) <a href="https://twitter.com/athanph/status/443348730335723520?ref_src=twsrc%5Etfw">March 11, 2014</a>
-                        </blockquote>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </div>
-                </div>
+        <div class="content grid" data-columns="1">
+          <div class="content__col">
+            <div class="content-breaker">
+              <span aria-hidden="true">&lbrace;</span>
+              <span
+                >I (try to) maintain a Facebook page -
+                <small
+                  ><a
+                    href="https://www.facebook.com/frontendnotes"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Front-end Notes</a
+                  ></small
+                >
+                - where I share Front-end tips and personal learnings.</span
+              >
+              <span aria-hidden="true">&rbrace;</span>
             </div>
-        </main>
-        <footer class="container">
-            <small>
-                &copy;2023. JonathanManas.dev
-            </small> -
-            <small><a href="./JonathanManas-Resume2023.pdf" target="_blank">Download Resume</a></small>
-        </footer>
+          </div>
+        </div>
+
+        <div class="content grid" data-columns="3">
+          <div class="content__col">
+            <div class="panel">
+              <h3 class="panel__title">Education</h3>
+              <div class="panel__content">
+                <p>
+                  Bachelor of Science in Psychology<br />
+                  <small>Far Eastern University, Manila</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content__col">
+            <div class="panel">
+              <h3 class="panel__title">Personal Milestones</h3>
+              <div class="panel__content">
+                <p>
+                  Run 102KM Bataan Death March (BDM) Ultramarathon
+                  <small>- Philippines (2012)</small>
+                </p>
+                <p>
+                  Climbed Mt. Kinabalu
+                  <small>- Kota Kinabalu, Sabah, Malaysia (2013)</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content__col">
+            <div class="panel">
+              <h3 class="panel__title">Get in touch</h3>
+              <div class="panel__content">
+                <p>
+                  LinkedIn:
+                  <a
+                    href="https://inkedin.com/in/athanph"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >linkedin.com/in/athanph</a
+                  >
+                </p>
+                <p>
+                  Github:
+                  <a
+                    href="https://github.com/athanph"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >github.com/athanph</a
+                  >
+                </p>
+                <p>
+                  Email:
+                  <a
+                    href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#97;&#116;&#104;&#97;&#110;&#109;&#97;&#110;&#97;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                    >&#106;&#111;&#110;&#97;&#116;&#104;&#97;&#110;&#109;&#97;&#110;&#97;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a
+                  >
+                </p>
+                <p>
+                  Facebook:
+                  <small
+                    ><a
+                      href="https://www.facebook.com/frontendnotes"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >Front-end Notes</a
+                    ></small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content grid" data-columns="1">
+          <div class="content__col">
+            <div class="card" data-card="extra">
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                  First memories of the web: 1999, my very first Yahoo email;
+                  GeoCities, Netscape, webpage using MS FrontPage. Happy 25th
+                  Birthday Web!
+                  <a
+                    href="https://twitter.com/hashtag/web25?src=hash&amp;ref_src=twsrc%5Etfw"
+                    >#web25</a
+                  >
+                </p>
+                &mdash; Jonathan Manas (@athanph)
+                <a
+                  href="https://twitter.com/athanph/status/443348730335723520?ref_src=twsrc%5Etfw"
+                  >March 11, 2014</a
+                >
+              </blockquote>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="container">
+        <small> &copy;2024. JonathanManas.dev </small> -
+        <small
+          ><a href="./JonathanManas-Resume2024.pdf" target="_blank"
+            >Download Resume</a
+          ></small
+        >
+      </footer>
     </div>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWVKNG80DE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PWVKNG80DE"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PWVKNG80DE');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-PWVKNG80DE");
     </script>
-</body>
+  </body>
 </html>
