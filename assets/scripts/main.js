@@ -32,4 +32,30 @@
         localStorage.setItem('jonathanmanasdev-mode', isChecked ? 'dark' : 'light');
         input.checked = isChecked;
     }
+
+    // Project Detail Dialog
+    let dialogElem;
+    let lastActiveElement;
+    const showButtons = document.querySelectorAll(".show");
+    const closeButtons = document.querySelectorAll(".close");
+
+    showButtons.forEach(btn => {
+        const id = btn.getAttribute("data-detail");
+
+        btn.addEventListener("click", () => {
+            dialogElem = document.getElementById(`dialog-${id}`);
+            dialogElem.showModal();
+            lastActiveElement = btn;
+            dialogElem.addEventListener("close", () => {
+                lastActiveElement.focus();
+            });
+        });
+
+    });
+
+    closeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            dialogElem.close();
+        });
+    });
 })();
