@@ -11,6 +11,28 @@ const work = {
   description: "Some of the projects I have worked on.",
   projects: [
     {
+      title: "GEVFinds.com",
+      description: "Community Business Directory",
+      stack: [
+        "React",
+        "Remix.run",
+        "TypeScript",
+        "MongoDB",
+        "Mongoose",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Zod",
+      ],
+      url: "gevfinds.com",
+      link: "https://gevfinds.com",
+      image: "/assets/work/project-gevfinds.jpg",
+      role: "Owner / Developer",
+      scope: [
+        "A web application developed using the full-stack SSR React-framework Remix.run. TypeScript, Tailwind CSS, and Shadcn UI and MongoDB as the database.",
+      ],
+      showMore: false,
+    },
+    {
       title: "myosh",
       description: "Environmental, Health and Safety Management (EHS) SaaS",
       stack: [
@@ -241,7 +263,12 @@ const Work = () => {
                     </div>
                   )}
 
-                  {project.scope && <Scope scope={project.scope} />}
+                  {project.scope && (
+                    <Scope
+                      scope={project.scope}
+                      showMore={project.showMore ?? true}
+                    />
+                  )}
                 </div>
                 {project.image && (
                   <div className="w-full xl:w-[50%]">
