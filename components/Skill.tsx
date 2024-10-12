@@ -9,7 +9,13 @@ import {
   FaSass,
   FaWordpress,
 } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiWebpack } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiWebpack,
+  SiRemix,
+  SiTailwindcss,
+} from "react-icons/si";
 import {
   Tooltip,
   TooltipContent,
@@ -34,20 +40,28 @@ const skill = {
       icon: <FaJs className="inline" title="JavaScript" />,
     },
     {
+      name: "TypeScript",
+      icon: <SiTypescript className="inline" title="TypeScript" />,
+    },
+    {
       name: "React",
       icon: <FaReact className="inline" title="React" />,
+    },
+    {
+      name: "Remix.run",
+      icon: <SiRemix className="inline" title="Remix.run" />,
     },
     {
       name: "Next.js",
       icon: <SiNextdotjs className="inline" title="Next.js" />,
     },
     {
-      name: "TypeScript",
-      icon: <SiTypescript className="inline" title="TypeScript" />,
-    },
-    {
       name: "Sass",
       icon: <FaSass className="inline" title="Sass" />,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="inline" title="Tailwind CSS" />,
     },
     {
       name: "WordPress",
@@ -74,15 +88,18 @@ const skill = {
     "Redux / RTK",
     "Zustand",
     "RTK Query",
+    "React Query",
     "SWR",
     "React Hook Form",
+    "Zod",
     "Storybook",
     "Recharts",
     "ChartJs",
     "Styled Components",
     "Handlebars",
-    "Tailwind CSS",
     "Material UI",
+    "Shadcn UI",
+    "Framer Motion",
     "Salesforce",
     "Amplience",
     "Jest",
@@ -90,6 +107,9 @@ const skill = {
     "Figma",
     "Docker",
     "Web Components",
+    "SQL",
+    "MongoDB",
+    "Mongoose",
   ],
 };
 
@@ -97,9 +117,11 @@ const Skill = () => {
   return (
     <div className="flex flex-col">
       <h3 className="text-4xl font-bold">{skill.title}</h3>
-      <p className="max-w-[600px] text-white/60">{skill.description}</p>
+      <p className="max-w-[600px] text-white/60 text-sm leading-loose">
+        {skill.description}
+      </p>
 
-      <ul className="flex flex-wrap gap-4 mt-6">
+      <ul className="flex flex-wrap gap-2 xl:gap-3 mt-6 lg:justify-end">
         {skill.skills.map((skill, index) => (
           <li key={index} className="flex items-center gap-2 group">
             <TooltipProvider delayDuration={100}>
@@ -122,7 +144,7 @@ const Skill = () => {
         <li className="basis-full h-0">&nbsp;</li>
         {skill.others.map((skill, index) => (
           <li key={index} className="flex items-center">
-            <p className="bg-[#2f2f32] rounded-full text-sm py-2 px-4">
+            <p className="bg-[#2f2f32] rounded-full text-xs xl:text-sm py-2 px-4">
               {skill}
             </p>
           </li>

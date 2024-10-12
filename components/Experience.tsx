@@ -67,7 +67,9 @@ const Experience = () => {
   return (
     <div className="flex flex-col">
       <h2 className="text-4xl font-bold">{experience.title}</h2>
-      <p className="text-white/60">{experience.description}</p>
+      <p className="text-white/60 text-sm leading-loose">
+        {experience.description}
+      </p>
       <ul className="grid grid-cols-1 gap-2 pr-1 mt-6 border-l-4 border-white/10">
         {experience.experiences.map((experience) => {
           return (

@@ -20,9 +20,15 @@ const Resume = () => {
       }}
       className="py-14">
       <div className="container">
-        <div className="flex flex-col gap-10">
-          <Experience />
-          <Skill />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+          <div className="lg:col-span-8">
+            <Experience />
+          </div>
+          <div className="lg:col-span-4">
+            <Skill />
+          </div>
+        </div>
+        <div className="mt-10 flex flex-col gap-10">
           <Feedback />
           <Education />
         </div>

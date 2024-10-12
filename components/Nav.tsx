@@ -9,12 +9,12 @@ const links = [
     href: "/",
   },
   {
-    name: "Resume",
-    href: "/resume",
-  },
-  {
     name: "Work",
     href: "/work",
+  },
+  {
+    name: "Resume",
+    href: "/resume",
   },
 ];
 
